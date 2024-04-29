@@ -24,10 +24,7 @@ const navigationItems = [
   {
     separator: true,
   },
-  {
-    href: "/signin",
-    label: "Sign in",
-  },
+ 
 ];
 
 export default function MobileNav({ onClose }: { onClose: () => void }) {

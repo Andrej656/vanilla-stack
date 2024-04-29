@@ -6,7 +6,7 @@ import * as styles from "./PrimaryNav.css";
 const navigationItems = [
   {
     href: "#features",
-    label: "Features",
+    label: "BNS",
   },
   {
     href: "#testimonials",
@@ -14,7 +14,7 @@ const navigationItems = [
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Project details",
   },
 ];
 

@@ -6,11 +6,11 @@ const settings = {
 
   metadata: {
     title: {
-      default: "TaxPal",
-      template: "%s | TaxPal",
+      default: "BNS",
+      template: "%s | BNS",
     },
     description:
-      "Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.",
+      "Bitcoin Naming System for users and holders of unique digital identity in new internet era"
   },
 
   layout: {

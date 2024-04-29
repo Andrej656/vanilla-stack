@@ -49,7 +49,7 @@ export default function Header() {
             </Link>
           )}
           <Button primary url="/register">
-            Get started{matchMediumScreen ? " today" : ""}
+            Launch{matchMediumScreen ? " app" : ""}
           </Button>
           {!matchMediumScreen && (
             <MenuButton
