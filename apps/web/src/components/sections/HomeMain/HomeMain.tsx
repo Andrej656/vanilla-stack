@@ -13,26 +13,27 @@ export default function HomeMain() {
     <main className={styles.main}>
       <Text as="h1" variant="heading2Xl" className={styles.headline}>
         <Balancer>
-          Accounting{" "}
+          BNS{" "}
           <em className={styles.emphasize}>
-            made simple
+            Bitcon Naming
             <Scribble className={styles.scribble} />
           </em>{" "}
-          for small businesses.
+          system
         </Balancer>
       </Text>
       <Text as="p" className={styles.body}>
         <Balancer>
-          Most bookkeeping software is accurate, but hard to use. We make the
-          opposite trade-off, and hope you don’t get audited.
+        BNS One is all-in-one platform for BNS investors to be able to register, renew, manage, make/accept offers on their BNS names and much more, all in one place.
+        BNS One is the first complete platform for BNS (Bitcoin Name System) and will empower BNS investors by providing them with all the tools they need to be able to manage their assets.
+
         </Balancer>
       </Text>
       <Inline align="center" gap="s-m" rowGap="xs-s">
         <Button secondary url="/register">
-          Get 6 months free
+          Join DID world
         </Button>
         <Button outline iconBefore={<PlayIcon />} onClick={openVideoPopup}>
-          Watch video
+          See how it works
         </Button>
       </Inline>
     </main>

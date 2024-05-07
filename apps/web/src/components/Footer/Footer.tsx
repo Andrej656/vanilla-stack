@@ -20,7 +20,7 @@ export default function Footer({ className }: { className?: string }) {
         <Stack align="center" gap="xs-s" className={styles.bottomGroup}>
           <SocialNav />
           <Text as="p" variant="bodyS">
-            Copyright © {getFullYear()} TaxPal. All rights reserved.
+            Copyright © {getFullYear()} BNS. All rights reserved.
           </Text>
         </Stack>
       </div>

@@ -7,39 +7,21 @@ import { chunkArray } from "@/helpers";
 const companies = [
   {
     name: "Transistor",
-    logo: "/assets/company-transistor.svg",
+    logo: "/assets/bns.svg",
     width: 158,
-    height: 48,
+    height: 88,
   },
   {
     name: "Tuple",
-    logo: "/assets/company-tuple.svg",
+    logo: "/assets/bitcoin.svg",
     width: 105,
-    height: 48,
+    height: 88,
   },
   {
     name: "StaticKit",
-    logo: "/assets/company-statickit.svg",
+    logo: "/assets/stacks.svg",
     width: 127,
-    height: 48,
-  },
-  {
-    name: "Mirage",
-    logo: "/assets/company-mirage.svg",
-    width: 138,
-    height: 48,
-  },
-  {
-    name: "Laravel",
-    logo: "/assets/company-laravel.svg",
-    width: 136,
-    height: 48,
-  },
-  {
-    name: "Statamic",
-    logo: "/assets/company-statamic.svg",
-    width: 147,
-    height: 48,
+    height: 88,
   },
 ];
 
@@ -48,7 +30,7 @@ export default function Companies() {
   return (
     <section className={styles.section}>
       <Text as="p" align="center" className={styles.text}>
-        Trusted by these six companies so far
+        Trusted by Bitcoin and Stacks community
       </Text>
       <Inline align="center" gap="l-xl">
         {companiesChunks.map((companiesChunk, index) => (
