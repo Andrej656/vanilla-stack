@@ -12,28 +12,28 @@ import * as styles from "./FeaturesAlt.css";
 const features = [
   {
     icon: "/assets/feature-icon-reporting.svg",
-    name: "Reporting",
+    name: "BNS Features",
     title: "Stay on top of things with always up-to-date reporting features.",
     description:
-      "We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.",
+      "Start your journey with BNS on BNS One, the all-in-one platform for registering, renewing, making/accepting offers and managing your BNS assets..",
     image: "/assets/feature-profit-loss.webp",
   },
   {
     icon: "/assets/feature-icon-inventory.svg",
-    name: "Inventory",
+    name: "BNS managment",
     title:
-      "Never lose track of what’s in stock with accurate inventory tracking.",
+      "Complete BNS managment tools",
     description:
-      "We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.",
+      "Ability to create a profile, add your email for alerts & upload the BNS names you want to be alerted on their expiry,  add your BTC address to your BNS name (sending/receiving BTC currently only compatible with Leather), add your Nostr, update your Zonefile, Renewal, Transfer & Revoke options, all with slick UI/UX.",
     image: "/assets/feature-inventory.webp",
   },
   {
     icon: "/assets/feature-icon-contacts.svg",
-    name: "Contacts",
+    name: "BNS holders",
     title:
-      "Organize all of your contacts, service providers, and invoices in one place.",
+      "Adoption of BNS and some numbers",
     description:
-      "This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.",
+      "BNS has a relatively small adoption compared to ENS. At present BNS has 313,000 names registered where as ENS has cumulative registrations totally 3.27m, meaning that BNS registrations are less than 1/10th of ENS. .",
     image: "/assets/feature-contacts.webp",
   },
 ] as const;
@@ -55,9 +55,9 @@ export default function FeaturesAlt({ id }: { id?: string }) {
   return (
     <BaseSection
       id={id}
-      heading={`Simplify everyday business tasks.`}
+      heading={`All in one platform for manging your BNS.`}
       text={`Because you’d probably be a little confused if we suggested you
-    complicate your everyday business tasks instead.`}
+    complicate your everyday digital identity needs.`}
       textOptions={{ className: styles.sectionText }}
     >
       {featuresList}

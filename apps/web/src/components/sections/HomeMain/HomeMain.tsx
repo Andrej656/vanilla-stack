@@ -15,7 +15,7 @@ export default function HomeMain() {
         <Balancer>
           BNS{" "}
           <em className={styles.emphasize}>
-            Bitcon Naming
+            Bitcoin Naming
             <Scribble className={styles.scribble} />
           </em>{" "}
           system

@@ -11,28 +11,28 @@ import * as styles from "./Features.css";
 
 const features = [
   {
-    title: "Payroll",
+    title: "Register",
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: "/assets/feature-payroll.webp",
+      "Easily search and register your BNS names. Find the names you want through our intelligent suggestions algorithm. Bulk register up to 10 names.",
+    image: "/assets/dashboard.webp",
   },
   {
-    title: "Claim expenses",
+    title: "Renew",
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: "/assets/feature-expanses.webp",
+      "Renewing your BNS names became so much simpler with our two click renewal. Upload a CSV of all your names and we’ll provide you with real-time renewal alerts.",
+    image: "/assets/dashboard.webp",
   },
   {
-    title: "VAT handling",
+    title: "Send STX or BNS",
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: "/assets/feature-vat-returns.webp",
+      "Make light work of registering and renewing BNS names with our ‘Send STX to many’ tool, in a few clicks up to 10 addresses can be funded at the speed of Nakamoto.",
+    image: "/assets/dashboard.webp",
   },
   {
-    title: "Reporting",
+    title: "REST API",
     description:
-      "Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.",
-    image: "/assets/feature-reporting.webp",
+      "We've developed a REST API for BNS to streamline integration and tooling processes. Now, integrating with BNS is easier than ever.",
+    image: "/assets/dashboard.webp",
   },
 ];
 
@@ -50,9 +50,9 @@ export default function Features({ id }: { id?: string }) {
       wrapContent
       primary
       backgroundImage="/assets/background-features.jpg"
-      heading={`Everything you need to run your books.`}
+      heading={`Everything you need in one place.`}
       text={`Well everything you need if you aren’t that picky about minor
-    details like tax compliance.`}
+    details like BNS biding.`}
     >
       {/* TODO: ARIA: tab role (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) */}
       <div className={styles.layout}>
