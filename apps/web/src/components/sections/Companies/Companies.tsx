@@ -30,7 +30,7 @@ export default function Companies() {
   return (
     <section className={styles.section}>
       <Text as="p" align="center" className={styles.text}>
-        Trusted by Bitcoin and Stacks community
+        Trusted by Bitcoin and Stacks
       </Text>
       <Inline align="center" gap="l-xl">
         {companiesChunks.map((companiesChunk, index) => (
