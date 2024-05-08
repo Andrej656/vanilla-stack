@@ -11,12 +11,11 @@ export default function GetStarted({ id }: { id?: string }) {
       wrapContent
       backgroundImage="/assets/background-cta.jpg"
       heading={`Get started today!`}
-      text={`It’s time to take control of your books. Buy our software so you can
-    feel like you’re doing something productive.`}
+      text={`Start your journey with BNS One today and level-up your BNS name management!.`}
       textOptions={{ className: styles.sectionText }}
     >
       <Button primary url="/register" className={styles.cta}>
-        Get 6 months free
+        Register new DID
       </Button>
     </BaseSection>
   );

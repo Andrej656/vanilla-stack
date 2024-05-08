@@ -5,8 +5,6 @@ import {
   FeaturesAlt,
   GetStarted,
   Testimonials,
-  Pricing,
-  Questions,
 } from "@/components/sections";
 
 export default function Home() {
@@ -21,8 +19,7 @@ export default function Home() {
       <FeaturesAlt />
       <GetStarted />
       <Testimonials id="testimonials" />
-      <Pricing id="pricing" />
-      <Questions />
+      
     </>
   );
 }
