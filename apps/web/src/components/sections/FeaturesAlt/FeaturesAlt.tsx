@@ -11,7 +11,7 @@ import * as styles from "./FeaturesAlt.css";
 
 const features = [
   {
-    icon: "/assets/feature-icon-reporting.svg",
+    icon: "/assets/feature-icon-contacts.svg",
     name: "BNS Features",
     title: "Stay on top of things with always up-to-date reporting features.",
     description:
