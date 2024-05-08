@@ -38,8 +38,15 @@ const features = [
   },
 ] as const;
 
-export type Feature = (typeof features)[number];
-export type FeatureName = Feature["name"];
+export type FeatureName = "BNS Features" | "BNS managment" | "BNS holders";
+
+export type Feature = {
+  icon: string;
+  name: FeatureName;
+  title: string;
+  description: string;
+  image: string;
+};
 
 export default function FeaturesAlt({ id }: { id?: string }) {
   const matchMediumScreen = useMatchScreenSize("m");
@@ -55,7 +62,7 @@ export default function FeaturesAlt({ id }: { id?: string }) {
   return (
     <BaseSection
       id={id}
-      heading={`All in one platform for manging your BNS.`}
+      heading={`All in one platform for managing your BNS.`}
       text={`Because you’d probably be a little confused if we suggested you
     complicate your everyday digital identity needs.`}
       textOptions={{ className: styles.sectionText }}
@@ -68,36 +75,30 @@ export default function FeaturesAlt({ id }: { id?: string }) {
 function SmallScreenFeaturesAlt() {
   return (
     <Stack gap="xl-2xl">
-      {features.map((feature) => {
-        const itemClassNames = clsx(
-          styles.featureItem,
-          styles.featureItemActive
-        );
-        return (
-          <div key={feature.name} className={itemClassNames}>
-            <Icon featureName={feature.name} />
-            <Text as="p" className={styles.featureName}>
-              {feature.name}
-            </Text>
-            <Text as="h3" className={styles.featureTitle}>
-              <Balancer>{feature.title}</Balancer>
-            </Text>
-            <Text as="p" variant="bodyS">
-              <Balancer>{feature.description}</Balancer>
-            </Text>
-            <Bleed
-              className={styles.featureSmallImageBleed}
-              style={{ marginInline: `calc(var(--fluid-edge-width) * -1)` }}
-            >
-              <div className={styles.featureSmallImageWrapper}>
-                <div className={styles.featureSmallImage}>
-                  <Image src={feature.image} alt={feature.name} fill />
-                </div>
+      {features.map((feature) => (
+        <div key={feature.name} className={styles.featureItem}>
+          <Icon featureName={feature.name} />
+          <Text as="p" className={styles.featureName}>
+            {feature.name}
+          </Text>
+          <Text as="h3" className={styles.featureTitle}>
+            <Balancer>{feature.title}</Balancer>
+          </Text>
+          <Text as="p" variant="bodyS">
+            <Balancer>{feature.description}</Balancer>
+          </Text>
+          <Bleed
+            className={styles.featureSmallImageBleed}
+            style={{ marginInline: `calc(var(--fluid-edge-width) * -1)` }}
+          >
+            <div className={styles.featureSmallImageWrapper}>
+              <div className={styles.featureSmallImage}>
+                <Image src={feature.image} alt={feature.name} fill />
               </div>
-            </Bleed>
-          </div>
-        );
-      })}
+            </div>
+          </Bleed>
+        </div>
+      ))}
     </Stack>
   );
 }
